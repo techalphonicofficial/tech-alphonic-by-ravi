@@ -306,10 +306,10 @@ export default function ContactForm({
         </div>
 
         {/* PRIVACY */}
-        <p className="text-center text-xs leading-5 text-muted">
+        {/* <p className="text-center text-xs leading-5 text-muted">
           Your information is safe with us. We&apos;ll only use it to respond
           to your enquiry.
-        </p>
+        </p> */}
       </div>
     </form>
   );

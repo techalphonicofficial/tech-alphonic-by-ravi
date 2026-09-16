@@ -1,31 +1,24 @@
 import { notFound } from "next/navigation";
 
-import BlogDetail from "@/components/Blog/BlogDetail";
-import { blogDetails } from "@/config/blogData";
+import BlogDetail from "@/components/blog/BlogDetail";
+import { blogData } from "@/config/blogData";
 
 export default async function BlogDetailPage({ params }) {
   const { slug } = await params;
 
-  const post = blogDetails[slug];
+  const post = blogData.find((item) => item.slug === slug);
 
   if (!post) {
     notFound();
   }
 
-  const relatedPosts = blogData.posts
+  const relatedPosts = blogData
     .filter((item) => item.id !== post.id)
-    .map((item) => ({
-      ...item,
-      slug: item.href?.split("/").pop() || "",
-    }))
-    .filter((item) => item.slug);
+    .slice(0, 3);
 
   return (
     <BlogDetail
-      post={{
-        ...post,
-        slug,
-      }}
+      post={post}
       relatedPosts={relatedPosts}
     />
   );

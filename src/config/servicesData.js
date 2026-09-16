@@ -65,7 +65,7 @@ export const servicesData = {
       badge: "Service",
       title: "Shopify Development",
       description:
-        "Custom Shopify stores designed for better branding, faster shopping experiences, easy product management, and higher conversions.",
+        "Custom Shopify stores designed for better branding, faster shopping experiences, easy product management, and higher conversions. This will be developed by Shopify Developers",
       image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
     },
     // {

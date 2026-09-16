@@ -7,7 +7,7 @@ export default function FeaturedProjects({ projects }) {
   const [activeProject, setActiveProject] = useState(null);
 
   return (
-    <section className="relative bg-white px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
+    <section className="relative bg-white px-5 py-2 sm:px-8">
 
       <div className="mx-auto max-w-[1500px]">
 

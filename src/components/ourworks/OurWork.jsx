@@ -13,7 +13,7 @@ export default function OurWork() {
   return (
     <main className="overflow-hidden bg-[#F8FAFC] text-[#1F2937]">
 
-      <OurWorkHero data={ourWorkData.hero} />
+      {/* <OurWorkHero data={ourWorkData.hero} /> */}
 
       <FeaturedProjects projects={ourWorkData.projects} />
 
